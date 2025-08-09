@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start nest:dev": "dotenv -e ../.env -- nest start --watch",
     "start nestjs api": "nx serve api --watch",
     "prisma:generate": "npx prisma generate --schema libs/prisma-schema-one/prisma && npx prisma generate --schema libs/prisma-schema-two/prisma",
     "prisma-migrate": "dotenv -e ../.env -- npx prisma migrate dev --schema libs/prisma-schema-one/prisma && npx prisma migrate dev --schema libs/prisma-schema-two/prisma",
@@ -40,7 +39,7 @@
     "@types/node": "~24.2.0",
     "@typescript-eslint/eslint-plugin": "8.39.0",
     "@typescript-eslint/parser": "8.39.0",
-    "eslint": "9.32.0",
+    "eslint": "9.33.0",
     "eslint-config-prettier": "10.1.8",
     "jest": "30.0.5",
     "jest-environment-node": "^30.0.5",
